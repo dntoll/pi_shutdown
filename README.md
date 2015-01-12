@@ -10,9 +10,22 @@ https://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/robot/buttons_and_switch
 
 You need a resistor and LED on pin 1
 
+Download the script
+-------------------
 
-  sudo nano /etc/rc.local
+    git clone https://github.com/dntoll/pi_shutdown
+
+Make executable
+---------------
+
+    cd pi_shutdown
+    chmod +x pi_shutdown.sh
+
+Startup the script on boot
+--------------------------
+
+    sudo nano /etc/rc.local
 
 add the following to the end of the file before the exit 0
-
-  /home/pi/pi_shutdown/pi_shutdown.sh &
+    
+    /home/pi/pi_shutdown/pi_shutdown.sh &
