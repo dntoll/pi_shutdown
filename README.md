@@ -1,7 +1,7 @@
 # pi_shutdown
 A shutdown button and LED for headless Raspberry pi
 
-The LED turns on when the Pi has been booted up and you can login by ssh
+The LED starts to blink when the Pi has been booted up and you can login by ssh
 
 This project depends on wiringpi http://wiringpi.com/the-gpio-utility/
 
@@ -20,6 +20,7 @@ Make executable
 
     cd pi_shutdown
     chmod +x pi_shutdown.sh
+    chmod +x pi_blink.sh
 
 Startup the script on boot
 --------------------------
