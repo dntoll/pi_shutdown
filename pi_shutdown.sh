@@ -4,7 +4,7 @@
 #turn on LED connected to wiring pin 1
 #/usr/local/bin/gpio mode 18 out
 #/usr/local/bin/gpio write 18 1
-./pi_blink.sh &
+/home/pi/pi_shutdown/pi_blink.sh &
 
 #wait for button press on wiring pin 7
 /usr/local/bin/gpio wfi 20 rising
